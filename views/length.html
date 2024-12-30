@@ -1,0 +1,56 @@
+{{template "layouts/main" .}}
+
+<form action="/converter-length" method="POST" class="w-2/6">
+  <div class="flex flex-col justify-center items-center gap-3 p-5">
+    <h1 class="text-4xl font-bold text-primary m-3">{{.Title}}</h1>
+    <label class="form-control w-full max-w-s">
+      <div class="label">
+        <span class="label-text">Enter the length to convert</span>
+      </div>
+      <input
+        type="text"
+        name="data"
+        id="data"
+        placeholder="Type here"
+        class="input input-bordered w-full"
+      />
+    </label>
+    <div class="flex justify-between items-center w-full gap-3">
+      <label class="form-control w-full max-w-s">
+        <div class="label">
+          <span class="label-text">Unit to convert from</span>
+        </div>
+        <select class="select select-bordered" name="unit" id="unit">
+          <option disabled selected>Pick one</option>
+          <option value="mm">Millimeter</option>
+          <option value="cm">Centimeter</option>
+          <option value="m">Meter</option>
+          <option value="km">Kilometer</option>
+          <option value="in">Inch</option>
+          <option value="ft">Foot</option>
+          <option value="yd">Yard</option>
+          <option value="mi">Mile</option>
+        </select>
+      </label>
+      <label class="form-control w-full max-w-s">
+        <div class="label">
+          <span class="label-text">Unit to convert to</span>
+        </div>
+        <select class="select select-bordered" name="to" id="to">
+          <option disabled selected>Pick one</option>
+          <option value="mm">Millimeter</option>
+          <option value="cm">Centimeter</option>
+          <option value="m">Meter</option>
+          <option value="km">Kilometer</option>
+          <option value="in">Inch</option>
+          <option value="ft">Foot</option>
+          <option value="yd">Yard</option>
+          <option value="mi">Mile</option>
+        </select>
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary m-5">Convert</button>
+  </div>
+</form>
+
+{{template "layouts/footer" .}}
