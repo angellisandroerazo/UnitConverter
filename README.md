@@ -8,14 +8,6 @@ This is a simple unit converter application that allows you to convert length, w
 - Weight conversion
 - Temperature conversion
 
-## Installation
-
-To install the application, you can use the following command:
-
-```bash
-go install angellisandroerazo/unit-converter
-```
-
 ## Usage
 
 To use the application, you can run the following command:
