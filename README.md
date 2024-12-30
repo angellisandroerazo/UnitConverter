@@ -22,6 +22,8 @@ This is a simple unit converter application that allows you to convert length, w
 3. Run the application:
    ```bash
    go run main.go
+   ```
+   The application will be available at http://127.0.0.1:3000 or http://localhost:3000
 
 ## Problem Statement
 This project addresses a task management problem inspired by the challenges outlined in the [Unit Converter ](https://roadmap.sh/projects/unit-converter).
