@@ -8,14 +8,6 @@ This is a simple unit converter application that allows you to convert length, w
 - Weight conversion
 - Temperature conversion
 
-## Usage
-
-To use the application, you can run the following command:
-
-```bash
-unit-converter
-```
-
 ## Getting Started
 1. Clone the repository:
    ```bash
